@@ -1,286 +1,309 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-body{
-    font-family: "Montserrat",'Helvetica Neue', sans-serif;
+body {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
-:root{
-    --resp-title-color:#ff9614;
-    --resp-main-bg-color:#f6f5f3;
-    --resp-dessert-color:#4e3969;
-    --resp-footer-bg-color:#7c69a4;
-    --resp-main-category-color:#aaaaa9;
+:root {
+  --resp-title-color: #ff9614;
+  --resp-main-bg-color: #f6f5f3;
+  --resp-dessert-color: #4e3969;
+  --resp-footer-bg-color: #7c69a4;
+  --resp-main-category-color: #aaaaa9;
 }
 
-.row{
-    display: flex;
-    flex-direction: column;
+.row {
+  display: flex;
+  flex-direction: column;
 }
 
 .col-1 {
-    width: calc(100% / 12 * 1);
-    flex-grow: 1;
+  width: calc(100% / 12 * 1);
+  flex-grow: 1;
 }
 
 .col-2 {
-    width: calc(100% / 12 * 2);
+  width: calc(100% / 12 * 2);
 }
 
 .col-3 {
-    width: calc(100% / 12 * 3);
+  width: calc(100% / 12 * 3);
 }
 
 .col-4 {
-    width: calc(100% / 12 * 4);
+  width: calc(100% / 12 * 4);
 }
 
 .col-5 {
-    width: calc(100% / 12 * 5);
+  width: calc(100% / 12 * 5);
 }
 
 .col-6 {
-    width: calc(100% / 12 * 6);
+  width: calc(100% / 12 * 6);
 }
 
 .col-7 {
-    width: calc(100% / 12 * 7);
+  width: calc(100% / 12 * 7);
 }
 
 .col-8 {
-    width: calc(100% / 12 * 8);
+  width: calc(100% / 12 * 8);
 }
 
 .col-9 {
-    width: calc(100% / 12 * 9);
+  width: calc(100% / 12 * 9);
 }
 
 .col-10 {
-    width: calc(100% / 12 * 10);
+  width: calc(100% / 12 * 10);
 }
 
 .col-11 {
-    width: calc(100% / 12 * 11);
+  width: calc(100% / 12 * 11);
 }
 
 .col-12 {
-    width: calc(100% / 12 * 12);
+  width: calc(100% / 12 * 12);
 }
 
-.site_header{
-    min-height: 70px;
+.site_header {
+  min-height: 70px;
 }
 
-.site_main{
-    background-color: var(--resp-main-bg-color);
+.site_main {
+  background-color: var(--resp-main-bg-color);
 }
 
-.title{
-    color: var(--resp-title-color);
-    padding: 1rem 0;
-    text-align: center;
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-size: 1rem;
+.title {
+  color: var(--resp-title-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.container{
-    width: 95%;
-    max-width: 750px;
-    margin: auto;
+.container {
+  width: 95%;
+  max-width: 750px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.category {
+  color: var(--resp-main-category-color);
+}
+
+.name {
+  color: var(--resp-dessert-color);
+  padding: 1.2rem 0;
+}
+
+#show {
+  display: none;
+}
+
+h3 {
+  display: inline;
+}
+
+.recipe {
+  width: 100%;
+  background-color: white;
+}
+
+.description {
+  padding: 2rem;
+}
+
+.description ul {
+  padding-top: 2rem;
+}
+
+.description ul li {
+  padding: 1rem 0;
+  font-size: small;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.socials i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.socials li span {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 90%;
+    max-width: 980px;
+  }
+
+  .title {
+    text-align: start;
     padding: 1rem;
-    min-height: 2000px;
-}
+    font-size: 1.2rem;
+  }
 
-.category{
-    color: var(--resp-main-category-color);
-}
-
-.name{
-    color: var(--resp-dessert-color);
-    padding: 1.2rem 0;
-}
-
-#show{
-    display: none;
-}
-
-h2{
+  #show {
     display: inline;
-}
+  }
 
-.recipe{
-    width: 100%;
+  .name {
+    color: var(--resp-dessert-color);
+    font-size: 1.5rem;
+  }
+
+  .description ul {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description ul li {
+    padding: 1rem 1.5rem 0 0;
+    width: calc(100% / 3);
+  }
+
+  h2 {
+    font-weight: lighter;
+  }
+
+  .socials li {
     background-color: white;
+    border-radius: 30px;
+    width: calc(100% / 5 - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.description{
-    padding: 2rem;
-}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+    max-width: 1440px;
+  }
 
-.description ul{
-    padding-top: 2rem;
-}
+  .col-1-lrg {
+    width: calc(100% / 12 * 1);
+    flex-grow: 1;
+  }
 
-.description ul li{
-    padding: 1rem 0;
+  .col-2-lrg {
+    width: calc(100% / 12 * 2);
+  }
+
+  .col-3-lrg {
+    width: calc(100% / 12 * 3);
+  }
+
+  .col-4-lrg {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-5-lrg {
+    width: calc(100% / 12 * 5);
+  }
+
+  .col-6-lrg {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-7-lrg {
+    width: calc(100% / 12 * 7);
+  }
+
+  .col-8-lrg {
+    width: calc(100% / 12 * 8);
+  }
+
+  .col-9-lrg {
+    width: calc(100% / 12 * 9);
+  }
+
+  .col-10-lrg {
+    width: calc(100% / 12 * 10);
+  }
+
+  .col-11-lrg {
+    width: calc(100% / 12 * 11);
+  }
+
+  .col-12-lrg {
+    width: calc(100% / 12 * 12);
+  }
+
+  .title {
+    text-align: start;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #show {
+    display: inline;
+  }
+
+  .name {
+    color: var(--resp-dessert-color);
+    font-size: 1.7rem;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .description ul {
+    padding-top: 1rem;
+    display: block;
+  }
+
+  .description ul li {
     font-size: small;
-}
+    width: 100%;
+    padding: 0.5rem 0;
+  }
 
+  .img img {
+    height: 100%;
+  }
 
+  .socials li span {
+    display: inline-block;
+  }
 
+  .socials li {
+    background-color: white;
+    border-radius: 30px;
+    width: calc(100% / 5 - 1rem);
+    justify-content: center;
+    text-align: center;
+  }
 
-
-
-
-@media screen and (min-width:767px) {
-    
-    .container {
-        width: 90%;
-        max-width: 980px;   
-    }
-    
-    .title{
-        text-align: start;
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    #show{
-        display: inline;
-    }
-
-    .name {
-        color: var(--resp-dessert-color);
-        font-size: 1.5rem; 
-    }
-
-    .description ul {
-        padding-top: 1rem;   
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .description ul li {
-        padding: 1rem 1.5rem 0 0;
-        width: calc(100% / 3);   
-    }
-
-
-    
-}
-
-
-@media screen and (min-width:992px) {
-    
-    .container {
-            width: 70%;
-            max-width: 1440px;
-        }
-
-    .col-1-lrg {
-            width: calc(100% / 12 * 1);
-            flex-grow: 1;
-        }
-    
-    .col-2-lrg {
-            width: calc(100% / 12 * 2);
-            
-        }
-    
-    .col-3-lrg {
-            width: calc(100% / 12 * 3);
-            
-        }
-    
-    .col-4-lrg {
-            width: calc(100% / 12 * 4);
-            
-        }
-    
-    .col-5-lrg {
-            width: calc(100% / 12 * 5);
-            
-        }
-    
-    .col-6-lrg {
-            width: calc(100% / 12 * 6);
-            
-        }
-    
-    .col-7-lrg {
-            width: calc(100% / 12 * 7);
-            
-        }
-    
-    .col-8-lrg {
-            width: calc(100% / 12 * 8);
-            
-        }
-    
-    .col-9-lrg {
-            width: calc(100% / 12 * 9);
-            
-        }
-    
-    .col-10-lrg {
-            width: calc(100% / 12 * 10);
-            
-        }
-    
-    .col-11-lrg {
-            width: calc(100% / 12 * 11);
-            
-        }
-    
-    .col-12-lrg {
-            width: calc(100% / 12 * 12);  
-        }
-    
-    .title {
-        text-align: start;
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    #show {
-        display: inline;
-    }
-
-    .name {
-        color: var(--resp-dessert-color);
-        font-size: 1.7rem;
-    }
-
-    .row{
-        flex-direction: row;
-    }
-
-    .description ul {
-        padding-top: 1rem;
-        display: block;
-    }
-    
-    .description ul li {
-        font-size: small; 
-        width: 100%;  
-        padding: 0.5rem 0;
-    }
-
-    .img img{
-        height: 100%;
-    }
-    
+  .socials i {
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.5rem 0.3rem;
+  }
 }
