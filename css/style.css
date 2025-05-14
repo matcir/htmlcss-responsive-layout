@@ -100,7 +100,7 @@ body {
   text-align: center;
   font-family: "Nerko One", cursive;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -125,6 +125,7 @@ body {
 
 h3 {
   display: inline;
+  font-size: bigger;
 }
 
 .recipe {
@@ -208,6 +209,10 @@ hr {
   color: white;
 }
 
+.banner {
+  display: none;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 90%;
@@ -217,7 +222,7 @@ hr {
   .title {
     text-align: start;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   #show {
@@ -258,6 +263,10 @@ hr {
     display: inline-block;
     padding: 1rem 1rem 0 0;
     float: left;
+  }
+
+  .banner {
+    display: block;
   }
 }
 
