@@ -87,6 +87,13 @@ body {
   background-color: var(--resp-main-bg-color);
 }
 
+.site_footer {
+  background-color: var(--resp-footer-bg-color);
+  color: white;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
 .title {
   color: var(--resp-title-color);
   padding: 1rem 0;
@@ -175,6 +182,30 @@ hr {
 .presentation p {
   padding: 0.5rem 0;
   line-height: 2rem;
+}
+
+.site_footer p:first-child {
+  font-weight: bold;
+}
+
+.site_footer p {
+  padding: 0.5rem 0;
+}
+
+.info li {
+  width: 25%;
+  padding: 1rem 0;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.info a {
+  color: white;
 }
 
 @media screen and (min-width: 767px) {
@@ -288,7 +319,7 @@ hr {
   .title {
     text-align: start;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   #show {
@@ -335,5 +366,26 @@ hr {
     background-color: white;
     border-radius: 30px;
     padding: 0.5rem 0.3rem;
+  }
+
+  .site_footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+  }
+
+  .left {
+    text-align: start;
+  }
+
+  .info {
+    display: flex;
+    padding: 1rem 0;
+    flex-wrap: nowrap;
+  }
+
+  .info li {
+    width: 100%;
+    padding: 1rem 0;
   }
 }
