@@ -12,6 +12,13 @@ body{
     font-family: "Montserrat",'Helvetica Neue', sans-serif;
 }
 
+:root{
+    --resp-title-color:#ff9614;
+    --resp-main-bg-color:#f6f5f3;
+    --resp-dessert-color:#4e3969;
+    --resp-footer-bg-color:#7c69a4;
+}
+
 .col-1 {
     width: calc(100% / 12 * 1);
     padding: 1rem;
@@ -72,3 +79,18 @@ body{
     width: calc(100% / 12 * 12);
     padding: 1rem;
 }
+
+.site_header{
+    min-height: 70px;
+}
+
+.title{
+    color: var(--resp-title-color);
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: larger;
+}
+
+
