@@ -17,6 +17,7 @@ body{
     --resp-main-bg-color:#f6f5f3;
     --resp-dessert-color:#4e3969;
     --resp-footer-bg-color:#7c69a4;
+    --resp-main-category-color:#aaaaa9;
 }
 
 .col-1 {
@@ -84,13 +85,78 @@ body{
     min-height: 70px;
 }
 
+.site_main{
+    background-color: white;
+}
+
 .title{
     color: var(--resp-title-color);
     padding: 1rem 0;
     text-align: center;
     font-family: "Nerko One", cursive;
     font-weight: 400;
-    font-size: larger;
+    font-size: 1rem;
+}
+
+.container{
+    width: 95%;
+    max-width: 750px;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--resp-main-bg-color);
+    min-height: 2000px;
+}
+
+.category{
+    color: var(--resp-main-category-color);
+}
+
+.name{
+    color: var(--resp-dessert-color);
+    padding: 1.2rem 0;
+}
+
+#show{
+    display: none;
+}
+
+h2{
+    display: inline;
 }
 
 
+
+@media screen and (min-width:767px) {
+    .title{
+        text-align: start;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #show{
+        display: inline;
+    }
+
+    .name {
+        color: var(--resp-dessert-color);
+        font-size: 1.5rem; 
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    .title {
+        text-align: start;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #show {
+        display: inline;
+    }
+
+    .name {
+        color: var(--resp-dessert-color);
+        font-size: 1.7rem;
+    }
+}
