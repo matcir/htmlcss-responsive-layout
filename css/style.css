@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 ul{
     list-style: none;
 }
@@ -18,6 +23,11 @@ body{
     --resp-dessert-color:#4e3969;
     --resp-footer-bg-color:#7c69a4;
     --resp-main-category-color:#aaaaa9;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
 }
 
 .col-1 {
@@ -78,7 +88,6 @@ body{
 
 .col-12 {
     width: calc(100% / 12 * 12);
-    padding: 1rem;
 }
 
 .site_header{
@@ -123,6 +132,27 @@ body{
 h2{
     display: inline;
 }
+
+.recipe{
+    width: 100%;
+    background-color: white;
+}
+
+.description{
+    padding: 2rem;
+}
+
+.description ul{
+    padding-top: 2rem;
+}
+
+.description ul li{
+    padding: 1rem 0;
+}
+
+
+
+
 
 
 
