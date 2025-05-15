@@ -132,6 +132,7 @@ h3 {
 .recipe {
   width: 100%;
   background-color: white;
+  box-shadow: 0 0 10px #b9b9b9;
 }
 
 .description {
